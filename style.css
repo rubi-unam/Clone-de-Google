@@ -1,0 +1,186 @@
+body{
+    background-color: #7fb396;
+    /* margen */
+    margin: 0;
+    /* margen hacia adentro */
+    padding: 0;
+    /* fuente del texto */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    /* se usará para que usa toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Navegación*/
+header{
+    /* width - ancho // height - alto */
+    width: 100%;
+    height: 50px;
+}
+
+header nav{
+    /* Justificar */
+    /* Habilita flex-end, flex-start */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    /* Eliminar puntos */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+}
+
+a{
+    /* Eliminar línea debajo del texto */
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    margin-right: 20px;
+}
+
+/* Icono del menú */
+nav .nav-right-section .menu{
+    /* Agregar íconos desde css */
+    background-image: url(https://ssl.gstatic.com/gb/images/bar/al-icon.png);
+    /* Imagen contenida en el elemento */
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    /* Imágenes no repetidas */
+    background-repeat: no-repeat;
+}
+
+/* Icono de perfil */
+.perfil{
+    /* Bordes redondos */
+    border-radius: 1000%;
+    margin-left: 20px;
+    width: 35%;
+}
+/*Color busar google*/
+.g{
+    color: #173826;
+}
+.s{
+    color: #173826;
+}
+
+/*Main*/
+main{
+    margin-top: 100px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    /* Centrar absolutamente gracias a márgenes */
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height:150px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    /* ancho borde // borde estilo */
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+    width: 528px;
+}
+
+main .main-input-container:hover{
+    box-shadow: 3px 4px 4px 4px #7fb396;
+}
+
+main .main-input input{
+    height: 25px;
+    /* quitar borde */
+    border: none;
+    /* quitar borde al seleccionarlo */
+    outline: none;
+    width: 450px;
+    background-color: #7fb396;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://cdn-icons-png.flaticon.com/128/1296/1296902.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://cdn-icons-png.flaticon.com/128/2204/2204947.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin-right: 2px;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://cdn-icons-png.flaticon.com/128/2586/2586709.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    margin-right: 5px;
+}
+
+main .botones{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: #4bac76;
+}
+main button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #559170;
+    border: none;
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    margin-right: 5px;
+}
+
+/* Pie de página */
+footer{
+    background-color: #173826;
+    color:#F1EAFF;
+    width: 100%;
+    height: 75px;
+    margin-top: auto;
+}
+
+footer ul{
+    list-style: none;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer a{
+    color: #F1EAFF;
+}
+
+.pie-pagina-right{
+    display: flex;
+    align-content: flex-end;
+}
